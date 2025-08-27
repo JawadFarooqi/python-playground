@@ -7,3 +7,5 @@ The format is based on Keep a Changelog and this project adheres (pre-1.0) loose
 ## [Unreleased]
 
 - Initial scaffolding.
+- Added beginner-friendly quick start paths (README, CONTRIBUTING)
+- Added bootstrap script and minimal requirements.txt

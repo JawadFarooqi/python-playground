@@ -16,21 +16,45 @@ Most beginner resources mix too many ideas at once or hide important basics. Thi
 - Explicit learning objectives & exercises
 - Clean code & modern tooling (Ruff, Black, Pytest)
 
-## Quick Start
+## Quick Start (Pick ONE path)
 
+### 1. Fastest (just look & run a first notebook)
+You only need Python 3.11+ installed.
 ```bash
 git clone https://github.com/JawadFarooqi/python-playground.git
 cd python-playground
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
 pip install --upgrade pip
-pip install .[dev]
-pre-commit install
+pip install notebook
+jupyter notebook
+```
+Then open `notebooks/` and start with `00_index.ipynb` (will appear once added).
+
+### 2. Recommended (with helper tools & tests)
+```bash
+git clone https://github.com/JawadFarooqi/python-playground.git
+cd python-playground
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -e .[dev]  # install package + dev tools
+pre-commit install      # optional: auto-fix style on commit
+jupyter notebook
 ```
 
-Open notebooks in your preferred environment (VS Code, JupyterLab) from the `notebooks/` directory.
+### 3. One-liner (using uv — optional fast resolver)
+If you have `uv` installed:
+```bash
+uv sync --all-extras
+uv run jupyter notebook
+```
 
-## Repository Layout
+If you only want to browse notebooks online (no install), you will later be able to use an nbviewer or Binder badge (coming soon).
+
+> New to virtual environments? Think of `.venv` as a private folder where this project keeps its own tools so they don't clash with other projects.
+
+## Repository Layout (early stage)
 
 ```
 src/playground/    # Reusable helper utilities imported by notebooks
@@ -81,10 +105,12 @@ See `CONTRIBUTING.md` for full guidelines. PRs welcome—especially improvements
 
 ## Roadmap (Short-Term)
 
-- [ ] Populate initial 10 notebooks (basics & control flow)
-- [ ] Add notebook execution tests
-- [ ] Publish docs site (MkDocs)
+- [ ] Add `00_index.ipynb` with welcome + how to use this repo
+- [ ] Populate first basics notebooks (variables, types, printing)
+- [ ] Add notebook execution tests (smoke subset)
+- [ ] Publish docs site (MkDocs + notebook gallery)
 - [ ] Add exercises + solution reveal pattern
+- [ ] Provide Binder / Codespaces buttons
 
 ## License
 

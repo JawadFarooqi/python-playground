@@ -1,4 +1,3 @@
-
 # 🐍 Python Learning Plan: Zero to Data Science/AI Professional
 
 **Instructions:** Check ✅ the box when you complete each notebook!
@@ -15,6 +14,7 @@
 **AI & Machine Learning (26-30):** ⬜ ⬜ ⬜ ⬜ ⬜
 
 ---
+
 ## 📋 Completion Guidelines
 
 To mark a notebook as complete you should satisfy ALL of the following criteria (treat this like a mini Definition of Done):
@@ -28,6 +28,7 @@ To mark a notebook as complete you should satisfy ALL of the following criteria 
 7. Versioned: Any new or modified supporting files are saved and committed to the repo.
 
 Optional stretch (recommended): Teach the concept to a rubber duck, friend, or record a 2‑minute audio summary.
+
 - ✅ Have working code saved in your repository
 
 ---
@@ -253,7 +254,9 @@ After completing all 30 notebooks, you'll have **built a strong foundation** for
 - Preparation for junior-level positions with additional learning and practice
 
 ### Additional Clarification
+
 Completing these notebooks alone will not make you production‑ready for complex ML systems. Real proficiency requires: building larger end‑to‑end projects, collaborating in teams, reading source code, handling messy data, optimizing performance, writing tests, and deploying/monitoring models.
+
 - A foundation for pursuing formal education or professional certifications
 
 ---
@@ -265,7 +268,7 @@ Completing these notebooks alone will not make you production‑ready for comple
 - **Docker & Containerization:** [Docker Official Documentation](https://docs.docker.com/)
 - **Cloud Platforms:** [AWS](https://aws.amazon.com/training/), [Google Cloud](https://cloud.google.com/training), [Azure](https://docs.microsoft.com/en-us/learn/azure/)
 - **MLOps:** [MLflow](https://mlflow.org/), [Kubeflow](https://www.kubeflow.org/), [DVC](https://dvc.org/)
-- **Containers to Production Guides:** [12 Factor App](https://12factor.net/), [FastAPI Deployment](https://fastapi.tiangolo.com/deployment/) 
+- **Containers to Production Guides:** [12 Factor App](https://12factor.net/), [FastAPI Deployment](https://fastapi.tiangolo.com/deployment/)
 - **Model Serving:** [FastAPI](https://fastapi.tiangolo.com/), [TorchServe](https://pytorch.org/serve/), [BentoML](https://www.bentoml.com/), [Ray Serve](https://docs.ray.io/en/latest/serve/index.html)
 - **Observability & Monitoring:** [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), [Evidently](https://docs.evidentlyai.com/)
 - **CI/CD:** [GitHub Actions](https://docs.github.com/en/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/)
@@ -293,5 +296,5 @@ Completing these notebooks alone will not make you production‑ready for comple
 3. **Networking:** Join Python/ML communities, attend meetups, engage on LinkedIn
 4. **Continuous Learning:** Stay updated with latest developments in AI/ML
 5. **Apply for Internships/Junior Positions:** Gain real-world experience
-**Remember:** This learning plan is your starting point. Professional success requires continuous learning, practical experience, networking, feedback, and often additional formal training.
-**Remember:** This learning plan is your starting point. Professional success requires continuous learning, practical experience, and often additional formal training
+   **Remember:** This learning plan is your starting point. Professional success requires continuous learning, practical experience, networking, feedback, and often additional formal training.
+   **Remember:** This learning plan is your starting point. Professional success requires continuous learning, practical experience, and often additional formal training

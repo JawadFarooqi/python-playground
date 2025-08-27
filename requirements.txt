@@ -1,3 +1,0 @@
-# Minimal runtime requirements for just reading/running the early notebooks.
-# (Dev tools live in pyproject optional dependencies.)
-

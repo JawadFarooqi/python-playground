@@ -1,8 +1,4 @@
-"""Utility helpers used across notebooks.
-
-Keep functions here deterministic & lightweight so they run quickly in CI.
-"""
-from __future__ import annotations
+"""Simple utility functions for Python learning notebooks."""
 
 import contextlib
 import os
@@ -10,40 +6,48 @@ import platform
 import sys
 import time
 from dataclasses import dataclass
-from typing import Callable, Generator, Iterable, Any
 
 
 @dataclass
 class TimingResult:
-    """Result returned by timer context manager."""
+    """Result from timing a code block."""
     label: str
     seconds: float
 
-    def __str__(self) -> str:  # pragma: no cover - trivial
+    def __str__(self) -> str:
         return f"{self.label}: {self.seconds:.4f}s"
 
 
-def describe_env() -> dict[str, Any]:
-    """Return a snapshot of the Python execution environment.
-
-    Useful for reproducibility sections in notebooks.
+def describe_env() -> dict:
+    """Get information about your Python environment.
+    
+    Returns:
+        dict: Python version, platform, and current directory
+    
+    Example:
+        >>> env = describe_env()
+        >>> print(f"Python {env['python']} on {env['platform']}")
     """
     return {
         "python": sys.version.split()[0],
-        "implementation": platform.python_implementation(),
         "platform": platform.platform(),
         "executable": sys.executable,
         "cwd": os.getcwd(),
     }
 
 
-def timer(label: str = "block") -> Generator[TimingResult, None, None]:
-    """Context manager that measures execution time of a code block.
-
-    Example::
-        with timer("load-data") as t:
-            load()
-        print(t)
+@contextlib.contextmanager
+def timer(label: str = "operation"):
+    """Time how long code takes to run.
+    
+    Args:
+        label: Name for this timing measurement
+    
+    Example:
+        >>> with timer("my calculation") as t:
+        ...     result = sum(range(1000))
+        >>> print(t)
+        my calculation: 0.0001s
     """
     start = time.perf_counter()
     result = TimingResult(label=label, seconds=0.0)
@@ -51,17 +55,3 @@ def timer(label: str = "block") -> Generator[TimingResult, None, None]:
         yield result
     finally:
         result.seconds = time.perf_counter() - start
-
-
-@contextlib.contextmanager
-def time_call(label: str, func: Callable[..., Any], *args, **kwargs) -> Iterable[TimingResult]:
-    """Time the execution of a callable inside a context for uniform API.
-
-    Example::
-        with time_call("sleep", time.sleep, 0.1) as res:
-            pass
-        print(res)
-    """
-    with timer(label) as t:
-        func(*args, **kwargs)
-        yield t

@@ -1,0 +1,34 @@
+[project]
+name = "python-playground"
+version = "0.1.0"
+description = "Beginner-friendly Python & Jupyter learning playground"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [ { name = "Jawad Farooqi" } ]
+keywords = ["python", "learning", "notebooks", "beginners"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Intended Audience :: Education",
+  "Topic :: Education",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+# Add heavier libs later; keep core minimal for fast CI
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.5.5",
+  "black>=24.4.2",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"

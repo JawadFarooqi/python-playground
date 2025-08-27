@@ -1,20 +1,22 @@
 <div align="center">
 	<h1>Python Playground</h1>
-	<p><strong>A curated, progressive open-source path for beginners to learn Python with Jupyter notebooks.</strong></p>
+	<p><strong>A structured learning journey through Python fundamentals to AI/ML concepts with 30 interactive Jupyter notebooks.</strong></p>
 	<p>
 		<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>
 		<a href=".github/workflows/ci.yml"><img alt="CI" src="https://github.com/JawadFarooqi/python-playground/actions/workflows/ci.yml/badge.svg"></a>
 	</p>
 </div>
 
-## Why this project?
+## About This Project
 
-Most beginner resources mix too many ideas at once or hide important basics. This repository aims to provide:
+This repository provides a structured path for learning Python through 30 carefully organized Jupyter notebooks, progressing from basic syntax to advanced topics including data science and AI/ML fundamentals.
 
-- A clear sequential learning path
-- Small, fast, reproducible notebooks
-- Explicit learning objectives & exercises
-- Clean code & modern tooling (Ruff, Black, Pytest)
+**What You'll Find:**
+
+- **Clear Learning Path:** 30 notebooks organized across 6 progressive sections
+- **Hands-On Learning:** Interactive code examples and practice exercises
+- **Modern Python:** Current best practices and real-world applications
+- **Comprehensive Scope:** From Python basics through AI/ML introductions
 
 ## Quick Start (Pick ONE path)
 
@@ -32,7 +34,7 @@ pip install notebook
 jupyter notebook
 ```
 
-Then open `notebooks/` and start with `00_index.ipynb` (will appear once added).
+Then open `notebooks/` and start with `01_getting_started.ipynb`.
 
 ### 2. Recommended (with helper tools & tests)
 
@@ -60,63 +62,102 @@ If you only want to browse notebooks online (no install), you will later be able
 
 > New to virtual environments? Think of `.venv` as a private folder where this project keeps its own tools so they don't clash with other projects.
 
-## Repository Layout (early stage)
+## Repository Layout
 
 ```
 src/playground/    # Reusable helper utilities imported by notebooks
-notebooks/         # Learning tracks (to be populated)
-tests/             # Pytest-based tests (unit + future notebook smoke tests)
+notebooks/         # 30 progressive learning notebooks organized in 6 tracks
+  01_foundation/     # Notebooks 1-5: Python basics
+  02_core_skills/    # Notebooks 6-10: Functions, data structures
+  03_intermediate/   # Notebooks 11-15: OOP, file handling, error handling
+  04_advanced/       # Notebooks 16-20: Advanced Python, project development
+  05_data_science/   # Notebooks 21-25: NumPy, pandas, visualization
+  06_ai_machine_learning/  # Notebooks 26-30: ML, deep learning, AI applications
+tests/             # Pytest-based tests (unit + notebook smoke tests)
 docs/              # Documentation site sources
 .github/           # CI workflows, issue templates, PR template
 ```
 
-## Planned Notebook Tracks
+## Learning Path Structure
 
-| Track | Topic             | Focus                               |
-| ----- | ----------------- | ----------------------------------- |
-| 01    | Basics            | Syntax, variables, types, I/O       |
-| 02    | Control Flow      | Conditionals, loops, comprehensions |
-| 03    | Functions         | Defining, arguments, lambdas        |
-| 04    | Data Structures   | Lists, tuples, dicts, sets          |
-| 05    | OOP               | Classes, inheritance, dataclasses   |
-| 06    | Modules & Env     | Imports, packaging, virtual envs    |
-| 07    | Error Handling    | Exceptions, patterns                |
-| 08    | IO & Files        | Files, JSON                         |
-| 09    | Stdlib Essentials | datetime, pathlib, collections      |
-| 10    | Testing           | Pytest basics                       |
-| 11    | Tooling           | Linting, formatting, type hints     |
-| 12    | Data Handling     | NumPy, pandas                       |
-| 13    | Visualization     | matplotlib, seaborn                 |
-| 14    | Next Steps        | CLI apps, packaging                 |
+**🎯 Learning Journey:** Master Python fundamentals → Explore data science → Discover AI/ML concepts
 
-## Notebook Format Standard
+| Section          | Notebooks | Focus Area               | What You'll Learn                                    |
+| ---------------- | --------- | ------------------------ | ---------------------------------------------------- |
+| **Foundation**   | 1-5       | Python Essentials        | Syntax, variables, operations, basic programming     |
+| **Core Skills**  | 6-10      | Programming Fundamentals | Loops, functions, data structures, control flow      |
+| **Intermediate** | 11-15     | Structured Programming   | OOP, file handling, error management, debugging      |
+| **Advanced**     | 16-20     | Professional Development | Modules, packages, testing, best practices           |
+| **Data Science** | 21-25     | Data Analysis            | NumPy, pandas, visualization, data workflows         |
+| **AI & ML**      | 26-30     | Machine Learning         | ML fundamentals, neural networks, modern AI concepts |
 
-Each notebook begins with:
+**📈 Track Your Progress:** Use `learning_plan.md` for detailed learning objectives and completion tracking.
 
-- Title
-- Learning Objectives (3–5)
-- Prerequisites (links)
-- Estimated Time
-- Key Terms
+## Notebook Design
 
-Ends with:
+Each notebook follows a consistent learning-focused structure:
 
-- Summary
-- Exercises (difficulty ★ to ★★★)
-- Further Reading
+- **Clear Objectives:** Know exactly what you'll learn and achieve
+- **Step-by-Step Examples:** Code demonstrations with detailed explanations
+- **Practice Exercises:** Reinforce concepts through hands-on coding
+- **Real-World Applications:** See how concepts apply to actual problems
+- **Progress Summaries:** Review and solidify your understanding
+
+Perfect for self-paced learning with measurable progress at each step.
+
+## How to Use This Repository
+
+1. **Start Fresh:** Follow the setup instructions to get your environment ready
+2. **Begin with Foundations:** Start with notebook 1 and work sequentially
+3. **Practice Actively:** Run all code examples and complete the exercises
+4. **Build Understanding:** Each notebook builds on concepts from previous ones
+5. **Track Your Journey:** Use `learning_plan.md` to mark your progress
+
+**Recommended Approach:** Dedicate focused time to each notebook, ensuring you understand concepts before moving forward.
 
 ## Contributing
 
-See `CONTRIBUTING.md` for full guidelines. PRs welcome—especially improvements to clarity, exercises, and tests.
+We welcome contributions that help improve the learning experience! Areas where you can make an impact:
 
-## Roadmap (Short-Term)
+- **Content Enhancement:** Improve explanations, add examples, create exercises
+- **Code Quality:** Fix bugs, optimize examples, ensure best practices
+- **Learning Experience:** Suggest improvements to notebook flow and structure
+- **Documentation:** Help make instructions clearer and more comprehensive
 
-- [ ] Add `00_index.ipynb` with welcome + how to use this repo
-- [ ] Populate first basics notebooks (variables, types, printing)
-- [ ] Add notebook execution tests (smoke subset)
-- [ ] Publish docs site (MkDocs + notebook gallery)
-- [ ] Add exercises + solution reveal pattern
-- [ ] Provide Binder / Codespaces buttons
+See `CONTRIBUTING.md` for detailed guidelines on how to get involved.
+
+## Learning Outcomes
+
+Successfully working through this repository will give you:
+
+- **Strong Python Foundation:** Solid understanding of Python syntax, concepts, and best practices
+- **Problem-Solving Skills:** Ability to break down problems and implement solutions
+- **Data Science Readiness:** Preparation for data analysis and visualization work
+- **AI/ML Awareness:** Understanding of machine learning concepts and modern AI applications
+- **Professional Development:** Knowledge of tools and practices used in real-world Python development
+
+This foundation prepares you for advanced studies, professional development, or specialized training in areas like data science, machine learning, or software engineering.
+
+## Project Status & Roadmap
+
+**Foundation Established:**
+
+- ✅ Complete repository structure with organized 30-notebook framework
+- ✅ Comprehensive learning plan with clear progression and completion criteria
+- ✅ Foundation notebooks ready for learning Python basics
+
+**Active Development:**
+
+- 🔄 Expanding content across all notebook sections
+- 🔄 Adding interactive exercises and practical projects
+- 🔄 Implementing testing and validation for all examples
+
+**Future Enhancements:**
+
+- 📋 Advanced project-based learning modules
+- 📋 Interactive assessments and progress tracking
+- 📋 Community features and collaborative learning tools
+- 📋 Integration with online learning platforms
 
 ## License
 

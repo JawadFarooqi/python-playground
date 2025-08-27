@@ -21,13 +21,16 @@ pre-commit install
 ```
 
 ### Absolute beginner shortcut
+
 If you only want to run notebooks (no tests/tooling yet):
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install notebook
 jupyter notebook
 ```
+
 Or run: `bash scripts/bootstrap.sh`
 
 ## Notebook guidelines

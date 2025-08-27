@@ -19,7 +19,9 @@ Most beginner resources mix too many ideas at once or hide important basics. Thi
 ## Quick Start (Pick ONE path)
 
 ### 1. Fastest (just look & run a first notebook)
+
 You only need Python 3.11+ installed.
+
 ```bash
 git clone https://github.com/JawadFarooqi/python-playground.git
 cd python-playground
@@ -29,9 +31,11 @@ pip install --upgrade pip
 pip install notebook
 jupyter notebook
 ```
+
 Then open `notebooks/` and start with `00_index.ipynb` (will appear once added).
 
 ### 2. Recommended (with helper tools & tests)
+
 ```bash
 git clone https://github.com/JawadFarooqi/python-playground.git
 cd python-playground
@@ -44,7 +48,9 @@ jupyter notebook
 ```
 
 ### 3. One-liner (using uv — optional fast resolver)
+
 If you have `uv` installed:
+
 ```bash
 uv sync --all-extras
 uv run jupyter notebook

@@ -1,0 +1,94 @@
+body:
+  - type: markdown
+    value: |
+      # Share Your Project
+      
+      Show off what you've built using Python Playground! Whether it's a creative solution to an exercise or your own project inspired by the lessons.
+  
+  - type: input
+    id: project-title
+    attributes:
+      label: Project Title
+      description: Give your project a catchy name
+      placeholder: My Awesome Python Project
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: notebooks-used
+    attributes:
+      label: Which notebooks did this project use?
+      multiple: true
+      options:
+        - Foundation (Notebooks 1-5)
+        - Core Skills (Notebooks 6-10)
+        - Intermediate (Notebooks 11-15)
+        - Advanced (Notebooks 16-20)
+        - Data Science (Notebooks 21-25)
+        - AI & Machine Learning (Notebooks 26-30)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: Tell us about your project
+      placeholder: This project analyzes weather data to predict...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: code-snippet
+    attributes:
+      label: Key Code Snippet
+      description: Share the most interesting part of your code
+      placeholder: |
+        ```python
+        # Your awesome code here
+        def my_function():
+            return "Hello World!"
+        ```
+    validations:
+      required: false
+  
+  - type: input
+    id: github-repo
+    attributes:
+      label: GitHub Repository (optional)
+      description: Link to your project repository
+      placeholder: https://github.com/yourusername/your-project
+    validations:
+      required: false
+  
+  - type: textarea
+    id: what-learned
+    attributes:
+      label: What did you learn?
+      description: Share your key takeaways
+      placeholder: I learned how to use pandas for data analysis and discovered...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: challenges
+    attributes:
+      label: Challenges & Solutions
+      description: What was difficult and how did you solve it?
+      placeholder: The hardest part was understanding loops, but I figured it out by...
+    validations:
+      required: false
+  
+  - type: checkboxes
+    id: project-type
+    attributes:
+      label: Project Type
+      description: What kind of project is this?
+      options:
+        - label: Exercise solution
+        - label: Personal project
+        - label: Work/school project
+        - label: Creative experiment
+        - label: Tutorial follow-along
+    validations:
+      required: true

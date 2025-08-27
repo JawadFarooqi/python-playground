@@ -1,0 +1,91 @@
+body:
+  - type: markdown
+    value: |
+      # Help with Notebook [Number]: [Notebook Title]
+      
+      Use this template when you need help with any Python Playground notebook.
+  
+  - type: textarea
+    id: what-trying-to-do
+    attributes:
+      label: What I'm trying to do
+      description: Describe what you're working on
+      placeholder: I'm trying to understand loops in notebook 6...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: what-tried
+    attributes:
+      label: What I've tried
+      description: Show the code you've written or approaches you've attempted
+      placeholder: |
+        ```python
+        # Your code here
+        for i in range(5):
+            print(i)
+        ```
+    validations:
+      required: true
+  
+  - type: textarea
+    id: whats-not-working
+    attributes:
+      label: What's not working
+      description: Describe the error or unexpected behavior
+      placeholder: I'm getting a NameError when I run this code...
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: python-version
+    attributes:
+      label: Python version
+      options:
+        - Python 3.11
+        - Python 3.12
+        - Python 3.13
+        - Other (please specify in additional context)
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other (please specify in additional context)
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: environment
+    attributes:
+      label: How you're running the code
+      options:
+        - Jupyter Notebook
+        - VS Code
+        - PyCharm
+        - Command line
+        - Google Colab
+        - Other (please specify in additional context)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other information that might help
+      placeholder: I'm a complete beginner to programming...
+    validations:
+      required: false
+  
+  - type: markdown
+    value: |
+      ---
+      
+      **Learning tip**: Remember to include enough context so others can help you effectively!

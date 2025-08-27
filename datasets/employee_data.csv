@@ -1,0 +1,21 @@
+employee_id,name,department,position,salary,years_experience,age,performance_rating
+1001,Alice Johnson,Engineering,Software Engineer,85000,3,28,4.2
+1002,Bob Smith,Engineering,Senior Engineer,105000,7,34,4.5
+1003,Charlie Brown,Marketing,Marketing Manager,75000,5,31,3.8
+1004,Diana Wilson,Engineering,Tech Lead,120000,8,36,4.7
+1005,Eve Davis,Sales,Sales Rep,65000,2,26,4.0
+1006,Frank Miller,Engineering,Software Engineer,88000,4,29,4.3
+1007,Grace Lee,HR,HR Manager,78000,6,33,4.1
+1008,Henry Taylor,Sales,Sales Manager,90000,9,38,4.4
+1009,Ivy Chen,Engineering,Senior Engineer,110000,6,32,4.6
+1010,Jack White,Marketing,Marketing Analyst,58000,1,24,3.9
+1011,Kate Brown,Finance,Financial Analyst,72000,4,30,4.2
+1012,Liam Jones,Engineering,Software Engineer,82000,2,27,4.0
+1013,Mia Garcia,HR,HR Specialist,55000,3,28,3.7
+1014,Noah Martinez,Sales,Sales Rep,62000,1,25,3.8
+1015,Olivia Anderson,Engineering,Senior Engineer,108000,7,35,4.5
+1016,Paul Rodriguez,Marketing,Content Manager,68000,4,29,4.1
+1017,Quinn Thompson,Finance,Finance Manager,95000,8,37,4.3
+1018,Rachel Clark,Engineering,Tech Lead,125000,9,38,4.8
+1019,Sam Lewis,Sales,Sales Rep,67000,3,27,4.0
+1020,Tina Walker,HR,Recruiter,60000,2,26,3.9

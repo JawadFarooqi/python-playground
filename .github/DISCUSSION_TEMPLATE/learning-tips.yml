@@ -1,0 +1,71 @@
+body:
+  - type: markdown
+    value: |
+      # Learning Tips & Study Strategies
+      
+      Share effective study methods, learning tips, or ask for advice on how to approach Python learning.
+  
+  - type: dropdown
+    id: topic-area
+    attributes:
+      label: What area is this about?
+      options:
+        - General learning strategies
+        - Specific Python concepts
+        - Study schedule and time management
+        - Debugging and problem-solving
+        - Building projects
+        - Career advice and next steps
+        - Motivation and persistence
+    validations:
+      required: true
+  
+  - type: textarea
+    id: tip-or-question
+    attributes:
+      label: Your tip or question
+      description: Share your learning tip or ask for advice
+      placeholder: |
+        I found that drawing diagrams really helps me understand loops...
+        
+        OR
+        
+        I'm struggling to stay motivated. How do you keep going when concepts get difficult?
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: experience-level
+    attributes:
+      label: Your experience level
+      options:
+        - Complete beginner (just started)
+        - Some programming experience
+        - Experienced in other languages
+        - Professional developer
+    validations:
+      required: true
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other details that might be helpful
+      placeholder: I'm learning Python for data science and have a math background...
+    validations:
+      required: false
+  
+  - type: checkboxes
+    id: learning-goals
+    attributes:
+      label: Learning Goals (optional)
+      description: What are you hoping to achieve?
+      options:
+        - label: Learn programming fundamentals
+        - label: Build web applications
+        - label: Analyze data and create visualizations
+        - label: Get into machine learning and AI
+        - label: Automate repetitive tasks
+        - label: Change careers to tech
+        - label: Improve problem-solving skills
+        - label: Just for fun and personal growth

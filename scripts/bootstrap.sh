@@ -5,12 +5,12 @@ set -euo pipefail
 # Usage: bash scripts/bootstrap.sh
 
 if [ ! -d .venv ]; then
-  python -m venv .venv
+  python3 -m venv .venv
   echo "[bootstrap] Created virtual environment .venv"
 fi
 # shellcheck disable=SC1091
 source .venv/bin/activate
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 pip install notebook
 echo
 echo "✅ Environment ready. Start Jupyter with: jupyter notebook"
